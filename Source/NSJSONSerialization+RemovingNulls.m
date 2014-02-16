@@ -15,7 +15,7 @@
     
     id JSONObject = [self JSONObjectWithData:data options:opt error:error];
     
-    if (error || !removingNulls)
+    if ((error && *error) || !removingNulls)
     {
         return JSONObject;
     }
