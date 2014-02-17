@@ -35,6 +35,11 @@
     return [@{@"one" : @1, @"two" : @2, @"null" : [NSNull null]} mutableCopy];
 }
 
+- (NSData*)dictionaryDataFromStringWithNulls
+{
+    return [@"{\"one\":1,\"two\":2,\"null\":null}" dataUsingEncoding:NSUTF8StringEncoding];
+}
+
 -(void)testRemoveNullsAtTopLevelFromArray
 {
     NSMutableArray *arrayWithNulls = [self arrayWithNulls];
@@ -53,6 +58,11 @@
 - (NSMutableArray *)arrayWithNulls
 {
     return [@[@1,@2,[NSNull null]] mutableCopy];
+}
+
+- (NSData*)arrayDataFromStringWithNulls
+{
+    return [@"[1, 2, null]" dataUsingEncoding:NSUTF8StringEncoding];
 }
 
 -(void)testRemoveNullsFromArrayInDictionary
@@ -129,6 +139,30 @@
     XCTAssertNotNil(category);
     XCTAssertEqualObjects(standard, category);
     NSLog(@"%@",category);
+}
+
+-(void)testRemoveNullsAtJSONSerializationFromDictionary
+{
+    NSData *dictionaryData = [self dictionaryDataFromStringWithNulls];
+    
+    NSError *standard = nil;
+    NSError *category = nil;
+    [NSJSONSerialization JSONObjectWithData:dictionaryData options:NSJSONReadingMutableContainers error:&standard];
+    NSDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:dictionaryData options:NSJSONReadingMutableContainers error:&category removingNulls:YES ignoreArrays:NO];
+    XCTAssertNil(standard);
+    XCTAssertNil([dictionary objectForKey:@"null"]);
+}
+
+-(void)testRemoveNullsAtJSONSerializationFromArray
+{
+    NSData *arrayData = [self arrayDataFromStringWithNulls];
+    
+    NSError *standard = nil;
+    NSError *category = nil;
+    [NSJSONSerialization JSONObjectWithData:arrayData options:NSJSONReadingMutableContainers error:&standard];
+    NSArray *array = [NSJSONSerialization JSONObjectWithData:arrayData options:NSJSONReadingMutableContainers error:&category removingNulls:YES ignoreArrays:NO];
+    XCTAssertNil(standard);
+    XCTAssertFalse([array containsObject:[NSNull null]]);
 }
 
 @end
