@@ -42,7 +42,7 @@
     
     [self enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop)
      {
-         if ([obj isEqual:[NSNull null]])
+         if (obj ==[NSNull null])
          {
              [nullKeys addObject:key];
          }
@@ -90,7 +90,7 @@
     {
         [self filterUsingPredicate:[NSPredicate predicateWithBlock:^BOOL(id evaluatedObject, NSDictionary *bindings)
         {
-            return ![evaluatedObject isEqual:[NSNull null]];
+            return evaluatedObject != [NSNull null];
         }]];
         
     }
