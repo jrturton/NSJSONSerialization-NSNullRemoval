@@ -1,0 +1,260 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		60E2832B18E4C68800421D1C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E2832A18E4C68800421D1C /* Foundation.framework */; };
+		60E2832E18E4C68800421D1C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E2832D18E4C68800421D1C /* main.m */; };
+		60E2833218E4C68800421D1C /* JSONNulls.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 60E2833118E4C68800421D1C /* JSONNulls.1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		60E2832518E4C68800421D1C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				60E2833218E4C68800421D1C /* JSONNulls.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		60E2832718E4C68800421D1C /* JSONNulls */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = JSONNulls; sourceTree = BUILT_PRODUCTS_DIR; };
+		60E2832A18E4C68800421D1C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		60E2832D18E4C68800421D1C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		60E2833018E4C68800421D1C /* JSONNulls-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JSONNulls-Prefix.pch"; sourceTree = "<group>"; };
+		60E2833118E4C68800421D1C /* JSONNulls.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = JSONNulls.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		60E2832418E4C68800421D1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60E2832B18E4C68800421D1C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		60E2831E18E4C68800421D1C = {
+			isa = PBXGroup;
+			children = (
+				60E2832C18E4C68800421D1C /* JSONNulls */,
+				60E2832918E4C68800421D1C /* Frameworks */,
+				60E2832818E4C68800421D1C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		60E2832818E4C68800421D1C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				60E2832718E4C68800421D1C /* JSONNulls */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		60E2832918E4C68800421D1C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60E2832A18E4C68800421D1C /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		60E2832C18E4C68800421D1C /* JSONNulls */ = {
+			isa = PBXGroup;
+			children = (
+				60E2832D18E4C68800421D1C /* main.m */,
+				60E2833118E4C68800421D1C /* JSONNulls.1 */,
+				60E2832F18E4C68800421D1C /* Supporting Files */,
+			);
+			path = JSONNulls;
+			sourceTree = "<group>";
+		};
+		60E2832F18E4C68800421D1C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				60E2833018E4C68800421D1C /* JSONNulls-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		60E2832618E4C68800421D1C /* JSONNulls */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60E2833518E4C68800421D1C /* Build configuration list for PBXNativeTarget "JSONNulls" */;
+			buildPhases = (
+				60E2832318E4C68800421D1C /* Sources */,
+				60E2832418E4C68800421D1C /* Frameworks */,
+				60E2832518E4C68800421D1C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JSONNulls;
+			productName = JSONNulls;
+			productReference = 60E2832718E4C68800421D1C /* JSONNulls */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		60E2831F18E4C68800421D1C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Richard Turton";
+			};
+			buildConfigurationList = 60E2832218E4C68800421D1C /* Build configuration list for PBXProject "JSONNulls" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 60E2831E18E4C68800421D1C;
+			productRefGroup = 60E2832818E4C68800421D1C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				60E2832618E4C68800421D1C /* JSONNulls */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		60E2832318E4C68800421D1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60E2832E18E4C68800421D1C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		60E2833318E4C68800421D1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		60E2833418E4C68800421D1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		60E2833618E4C68800421D1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JSONNulls/JSONNulls-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		60E2833718E4C68800421D1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JSONNulls/JSONNulls-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		60E2832218E4C68800421D1C /* Build configuration list for PBXProject "JSONNulls" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60E2833318E4C68800421D1C /* Debug */,
+				60E2833418E4C68800421D1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60E2833518E4C68800421D1C /* Build configuration list for PBXNativeTarget "JSONNulls" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60E2833618E4C68800421D1C /* Debug */,
+				60E2833718E4C68800421D1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 60E2831F18E4C68800421D1C /* Project object */;
+}
