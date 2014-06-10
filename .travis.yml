@@ -1,0 +1,4 @@
+language: objective-c
+xcode_project: NSNullRemovalTest/NSNullRemovalTest.xcproject
+xcode_scheme: NSNullRemovalTest
+xcode_sdk: macosx
