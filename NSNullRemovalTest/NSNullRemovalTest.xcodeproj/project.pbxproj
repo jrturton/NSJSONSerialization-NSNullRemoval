@@ -1,0 +1,394 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		27D3E47019470CF6001A3637 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27D3E46F19470CF6001A3637 /* Foundation.framework */; };
+		27D3E47319470CF6001A3637 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D3E47219470CF6001A3637 /* main.m */; };
+		27D3E48319470D7E001A3637 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27D3E48219470D7E001A3637 /* XCTest.framework */; };
+		27D3E49319470DB5001A3637 /* JRTNullStrippingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D3E49219470DB5001A3637 /* JRTNullStrippingTest.m */; };
+		27D3E49719470DE0001A3637 /* NSJSONSerialization+RemovingNulls.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D3E49619470DE0001A3637 /* NSJSONSerialization+RemovingNulls.m */; };
+		27D3E49819470DE0001A3637 /* NSJSONSerialization+RemovingNulls.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D3E49619470DE0001A3637 /* NSJSONSerialization+RemovingNulls.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		27D3E48D19470D7E001A3637 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27D3E46419470CF6001A3637 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27D3E46B19470CF6001A3637;
+			remoteInfo = NSNullRemovalTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		27D3E46C19470CF6001A3637 /* NSNullRemovalTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NSNullRemovalTest; sourceTree = BUILT_PRODUCTS_DIR; };
+		27D3E46F19470CF6001A3637 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		27D3E47219470CF6001A3637 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		27D3E47519470CF6001A3637 /* NSNullRemovalTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSNullRemovalTest-Prefix.pch"; sourceTree = "<group>"; };
+		27D3E48119470D7E001A3637 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		27D3E48219470D7E001A3637 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		27D3E48C19470D7E001A3637 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		27D3E49219470DB5001A3637 /* JRTNullStrippingTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JRTNullStrippingTest.m; path = ../../Tests/JRTNullStrippingTest.m; sourceTree = "<group>"; };
+		27D3E49519470DE0001A3637 /* NSJSONSerialization+RemovingNulls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSJSONSerialization+RemovingNulls.h"; sourceTree = "<group>"; };
+		27D3E49619470DE0001A3637 /* NSJSONSerialization+RemovingNulls.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSJSONSerialization+RemovingNulls.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		27D3E46919470CF6001A3637 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27D3E47019470CF6001A3637 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27D3E47E19470D7E001A3637 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27D3E48319470D7E001A3637 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27D3E46319470CF6001A3637 = {
+			isa = PBXGroup;
+			children = (
+				27D3E49419470DE0001A3637 /* Source */,
+				27D3E47119470CF6001A3637 /* NSNullRemovalTest */,
+				27D3E48419470D7E001A3637 /* Tests */,
+				27D3E46E19470CF6001A3637 /* Frameworks */,
+				27D3E46D19470CF6001A3637 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		27D3E46D19470CF6001A3637 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27D3E46C19470CF6001A3637 /* NSNullRemovalTest */,
+				27D3E48119470D7E001A3637 /* Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27D3E46E19470CF6001A3637 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27D3E46F19470CF6001A3637 /* Foundation.framework */,
+				27D3E48219470D7E001A3637 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		27D3E47119470CF6001A3637 /* NSNullRemovalTest */ = {
+			isa = PBXGroup;
+			children = (
+				27D3E47219470CF6001A3637 /* main.m */,
+				27D3E47419470CF6001A3637 /* Supporting Files */,
+			);
+			path = NSNullRemovalTest;
+			sourceTree = "<group>";
+		};
+		27D3E47419470CF6001A3637 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				27D3E47519470CF6001A3637 /* NSNullRemovalTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		27D3E48419470D7E001A3637 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				27D3E49219470DB5001A3637 /* JRTNullStrippingTest.m */,
+				27D3E48519470D7E001A3637 /* Supporting Files */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		27D3E48519470D7E001A3637 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				27D3E48C19470D7E001A3637 /* Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		27D3E49419470DE0001A3637 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				27D3E49519470DE0001A3637 /* NSJSONSerialization+RemovingNulls.h */,
+				27D3E49619470DE0001A3637 /* NSJSONSerialization+RemovingNulls.m */,
+			);
+			name = Source;
+			path = ../Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		27D3E46B19470CF6001A3637 /* NSNullRemovalTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27D3E47A19470CF6001A3637 /* Build configuration list for PBXNativeTarget "NSNullRemovalTest" */;
+			buildPhases = (
+				27D3E46819470CF6001A3637 /* Sources */,
+				27D3E46919470CF6001A3637 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NSNullRemovalTest;
+			productName = NSNullRemovalTest;
+			productReference = 27D3E46C19470CF6001A3637 /* NSNullRemovalTest */;
+			productType = "com.apple.product-type.tool";
+		};
+		27D3E48019470D7E001A3637 /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27D3E48F19470D7E001A3637 /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				27D3E47D19470D7E001A3637 /* Sources */,
+				27D3E47E19470D7E001A3637 /* Frameworks */,
+				27D3E47F19470D7E001A3637 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27D3E48E19470D7E001A3637 /* PBXTargetDependency */,
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = 27D3E48119470D7E001A3637 /* Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		27D3E46419470CF6001A3637 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Vertical Turtle";
+				TargetAttributes = {
+					27D3E48019470D7E001A3637 = {
+						TestTargetID = 27D3E46B19470CF6001A3637;
+					};
+				};
+			};
+			buildConfigurationList = 27D3E46719470CF6001A3637 /* Build configuration list for PBXProject "NSNullRemovalTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 27D3E46319470CF6001A3637;
+			productRefGroup = 27D3E46D19470CF6001A3637 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				27D3E46B19470CF6001A3637 /* NSNullRemovalTest */,
+				27D3E48019470D7E001A3637 /* Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		27D3E47F19470D7E001A3637 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27D3E46819470CF6001A3637 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27D3E47319470CF6001A3637 /* main.m in Sources */,
+				27D3E49719470DE0001A3637 /* NSJSONSerialization+RemovingNulls.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27D3E47D19470D7E001A3637 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27D3E49319470DB5001A3637 /* JRTNullStrippingTest.m in Sources */,
+				27D3E49819470DE0001A3637 /* NSJSONSerialization+RemovingNulls.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		27D3E48E19470D7E001A3637 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27D3E46B19470CF6001A3637 /* NSNullRemovalTest */;
+			targetProxy = 27D3E48D19470D7E001A3637 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		27D3E47819470CF6001A3637 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		27D3E47919470CF6001A3637 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		27D3E47B19470CF6001A3637 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NSNullRemovalTest/NSNullRemovalTest-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		27D3E47C19470CF6001A3637 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NSNullRemovalTest/NSNullRemovalTest-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		27D3E49019470D7E001A3637 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		27D3E49119470D7E001A3637 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		27D3E46719470CF6001A3637 /* Build configuration list for PBXProject "NSNullRemovalTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27D3E47819470CF6001A3637 /* Debug */,
+				27D3E47919470CF6001A3637 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27D3E47A19470CF6001A3637 /* Build configuration list for PBXNativeTarget "NSNullRemovalTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27D3E47B19470CF6001A3637 /* Debug */,
+				27D3E47C19470CF6001A3637 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		27D3E48F19470D7E001A3637 /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27D3E49019470D7E001A3637 /* Debug */,
+				27D3E49119470D7E001A3637 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 27D3E46419470CF6001A3637 /* Project object */;
+}

@@ -153,6 +153,18 @@
     XCTAssertNil([dictionary objectForKey:@"null"]);
 }
 
+-(void)testSendingNoOptionsStillWorks
+{
+    NSData *dictionaryData = [self dictionaryDataFromStringWithNulls];
+    
+    NSError *standard = nil;
+    NSError *category = nil;
+    [NSJSONSerialization JSONObjectWithData:dictionaryData options:kNilOptions error:&standard];
+    NSDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:dictionaryData options:kNilOptions error:&category removingNulls:YES ignoreArrays:NO];
+    XCTAssertNil(standard);
+    XCTAssertNil([dictionary objectForKey:@"null"]);
+}
+
 -(void)testRemoveNullsAtJSONSerializationFromArray
 {
     NSData *arrayData = [self arrayDataFromStringWithNulls];
