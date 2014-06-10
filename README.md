@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/jrturton/NSJSONSerialization-NSNullRemoval.svg)](https://travis-ci.org/jrturton/NSJSONSerialization-NSNullRemoval)
+
 NSJSONSerialization-NSNullRemoval
 =================================
 
