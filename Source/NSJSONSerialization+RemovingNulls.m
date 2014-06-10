@@ -10,7 +10,8 @@
     // Mutable containers are required to remove nulls.
     if (removingNulls)
     {
-        opt = opt && NSJSONReadingMutableContainers;
+        // Force add NSJSONReadingMutableContainers since the null removal depends on it.
+        opt = opt || NSJSONReadingMutableContainers;
     }
     
     id JSONObject = [self JSONObjectWithData:data options:opt error:error];
