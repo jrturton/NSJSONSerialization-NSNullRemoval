@@ -11,13 +11,18 @@
     if (removingNulls)
     {
         // Force add NSJSONReadingMutableContainers since the null removal depends on it.
-        opt = opt || NSJSONReadingMutableContainers;
+        opt = opt | NSJSONReadingMutableContainers;
     }
     
     id JSONObject = [self JSONObjectWithData:data options:opt error:error];
     
     if ((error && *error) || !removingNulls)
     {
+        return JSONObject;
+    }
+    
+    if (![JSONObject isKindOfClass:[NSArray class]] && ![JSONObject isKindOfClass:[NSDictionary class]]) {
+        
         return JSONObject;
     }
     

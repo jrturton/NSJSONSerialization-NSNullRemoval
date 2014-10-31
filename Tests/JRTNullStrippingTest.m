@@ -10,18 +10,6 @@
 
 @implementation JRTNullStrippingTest
 
-- (void)setUp
-{
-    [super setUp];
-    // Put setup code here; it will be run once, before the first test case.
-}
-
-- (void)tearDown
-{
-    // Put teardown code here; it will be run once, after the last test case.
-    [super tearDown];
-}
-
 -(void)testRemoveNullsAtTopLevelFromDictionary
 {
     NSMutableDictionary *dictionaryWithNulls = [self dictionaryWithNulls];
@@ -175,6 +163,19 @@
     NSArray *array = [NSJSONSerialization JSONObjectWithData:arrayData options:NSJSONReadingMutableContainers error:&category removingNulls:YES ignoreArrays:NO];
     XCTAssertNil(standard);
     XCTAssertFalse([array containsObject:[NSNull null]]);
+}
+
+-(void)testForceMutableContainersPreservesFragmentParsing {
+    
+    NSData *fragmentData = [@"32" dataUsingEncoding:NSUTF8StringEncoding];
+    
+    NSError *standard = nil;
+    NSError *category = nil;
+    [NSJSONSerialization JSONObjectWithData:fragmentData options:NSJSONReadingAllowFragments error:&standard];
+    NSNumber *number = [NSJSONSerialization JSONObjectWithData:fragmentData options:NSJSONReadingAllowFragments error:&category removingNulls:YES ignoreArrays:NO];
+    
+    XCTAssertNil(standard);
+    XCTAssertNotNil(number);
 }
 
 @end
