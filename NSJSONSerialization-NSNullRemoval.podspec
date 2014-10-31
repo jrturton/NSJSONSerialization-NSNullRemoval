@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'NSJSONSerialization-NSNullRemoval'
-  s.version      = '1.0.0'
+  s.version      = '1.0.1'
   s.license      = 'MIT'
   
   s.summary      = 'Categories on NSJSONSerialization, NSMutableDictionary and NSMutableArray to recursively remove NSNull objects returned from JSON services.'
